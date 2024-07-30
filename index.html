@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github-Cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>GitHub Cards </h1>
+    <div class="parts">
+        <div class="container">
+            <h3>Enter the Details</h3>
+            <input type="text" id="GitHubId" placeholder="GitHub's Username" required>
+            <div class="buttons">
+                <input type="button" name="button" id="btn" value="Create">
+                <input type="button" name="button" id="capture-btn" value="Download">
+            </div>
+        </div>
+        <div class="cards">
+            <div class="github-card">
+                <img src="" alt="Profile Image">
+                <div class="info">
+                    <p>Name: <span id="name"></span></p>
+                    <p>Username: <span id="username"></span></p>
+                    <p id="bioPara">Bio: <span id="bio"></span></p>
+                    <p>Twitter: <span id="twitter"></span></p>
+                    <div class="social1">
+                        <p>Followers: <span id="followers"></span></p>
+                        <p>Following: <span id="following"></span></p>
+                    </div>
+                    <div class="social2">
+                        <p>Public Repo: <span id="repo"></span></p>
+                        <p>Location: <span id="location"></span></p>
+                    </div>
+                    <a id="viewProfile" href="#" target="_blank">View Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="script.js"></script>
+</html>
